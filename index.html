@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -20,18 +21,22 @@
         <span><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</span>
       </div>
       <div class="form-card">
-        <form action="/">
-          <div>
+        <form id="form" action="/" method="GET">
+          <div class="form-control">
             <input id="name" name="name" placeholder="First Name" type="text">
+            <i class="fas fa-exclamation-circle"></i>
           </div>
-          <div>
+          <div class="form-control">
             <input id="last-name" name="last-name" placeholder="Last Name" type="text">
+            <i class="fas fa-exclamation-circle"></i>
           </div>
-          <div>
+          <div class="form-control">
             <input id="email" name="email" placeholder="Email Address" type="email">
+            <i class="fas fa-exclamation-circle"></i>
           </div>
-          <div>
+          <div class="form-control">
             <input id="password" name="password" placeholder="Password" type="password">
+            <i class="fas fa-exclamation-circle"></i>
           </div>
         </form>
         <button type="submit">CLAIM YOUR FREE TRAIL</button>
@@ -41,7 +46,6 @@
       </div>
     </div>
   </div>
-  I need to make a change to add a green square cause its late.
   <script src="./script.js"></script>
 </body>
 </html>

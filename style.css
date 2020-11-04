@@ -50,7 +50,13 @@ body {
           box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
-.container .main-content .form-card form input {
+.container .main-content .form-card form .form-control {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.container .main-content .form-card form .form-control input {
+  font-family: inherit;
   color: gray;
   font-weight: 700;
   padding: 20px 20px;
@@ -60,9 +66,17 @@ body {
   margin-bottom: 15px;
 }
 
-.container .main-content .form-card form input:focus {
+.container .main-content .form-card form .form-control input:focus {
   outline: none;
   border: 1px solid #6055a5;
+}
+
+.container .main-content .form-card form .form-control .fa-exclamation-circle {
+  color: #ff7a7a;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 21px;
+  right: 30px;
 }
 
 .container .main-content .form-card button {

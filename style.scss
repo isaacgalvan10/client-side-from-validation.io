@@ -44,18 +44,33 @@ body {
       box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
 
       form {
-        input {
-          color: gray;
-          font-weight: 700;
-          padding: 20px 20px;
-          border-radius: 8px;
-          border: 1px solid hsl(246, 25%, 77%);
-          width: 100%;
-          margin-bottom: 15px;
 
-          &:focus {
-            outline: none;
-            border: 1px solid hsl(248, 32%, 49%);
+        .form-control {
+          position: relative;
+          margin-bottom: 10px;
+
+          input {
+            font-family: inherit;
+            color: gray;
+            font-weight: 700;
+            padding: 20px 20px;
+            border-radius: 8px;
+            border: 1px solid hsl(246, 25%, 77%);
+            width: 100%;
+            margin-bottom: 15px;
+  
+            &:focus {
+              outline: none;
+              border: 1px solid hsl(248, 32%, 49%);
+            }
+          }
+  
+          .fa-exclamation-circle {
+            color: hsl(0, 100%, 74%);
+            font-size: 1.3rem;
+            position: absolute;
+            top: 21px;
+            right: 30px;
           }
         }
       }
