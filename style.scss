@@ -57,12 +57,34 @@ body {
             border-radius: 8px;
             border: 1px solid hsl(246, 25%, 77%);
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
   
             &:focus {
               outline: none;
               border: 1px solid hsl(248, 32%, 49%);
             }
+          }
+
+          .error {
+            border: 3px solid hsl(0, 100%, 74%);
+          }
+
+          .error-msg {
+            color: hsl(0, 100%, 74%);
+            font-size: .8rem;
+            font-style: italic;
+            position: absolute;
+            right: 5px;
+            top: 70px;
+            visibility: hidden;
+          }
+
+          .error-email {
+            color: hsl(0, 100%, 74%);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            visibility: hidden;
           }
   
           .fa-exclamation-circle {
@@ -71,6 +93,7 @@ body {
             position: absolute;
             top: 21px;
             right: 30px;
+            visibility: hidden;
           }
         }
       }

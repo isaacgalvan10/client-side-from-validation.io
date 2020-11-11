@@ -63,12 +63,34 @@ body {
   border-radius: 8px;
   border: 1px solid #b9b6d3;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .container .main-content .form-card form .form-control input:focus {
   outline: none;
   border: 1px solid #6055a5;
+}
+
+.container .main-content .form-card form .form-control .error {
+  border: 3px solid #ff7a7a;
+}
+
+.container .main-content .form-card form .form-control .error-msg {
+  color: #ff7a7a;
+  font-size: .8rem;
+  font-style: italic;
+  position: absolute;
+  right: 5px;
+  top: 70px;
+  visibility: hidden;
+}
+
+.container .main-content .form-card form .form-control .error-email {
+  color: #ff7a7a;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  visibility: hidden;
 }
 
 .container .main-content .form-card form .form-control .fa-exclamation-circle {
@@ -77,6 +99,7 @@ body {
   position: absolute;
   top: 21px;
   right: 30px;
+  visibility: hidden;
 }
 
 .container .main-content .form-card button {
