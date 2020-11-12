@@ -64,8 +64,22 @@ body {
               border: 1px solid hsl(248, 32%, 49%);
             }
           }
+        }
 
-          .error {
+        .error-msg {
+          display: none;
+        }
+        .error-email {
+          display: none;
+        }
+
+        .fa-exclamation-circle {
+          display: none;
+        }
+
+        .form-control.error {
+
+          input {
             border: 3px solid hsl(0, 100%, 74%);
           }
 
@@ -76,15 +90,14 @@ body {
             position: absolute;
             right: 5px;
             top: 70px;
-            visibility: hidden;
+            display: inline-block;
           }
-
           .error-email {
             color: hsl(0, 100%, 74%);
             position: absolute;
             left: 20px;
             top: 20px;
-            visibility: hidden;
+            display: inline-block;
           }
   
           .fa-exclamation-circle {
@@ -93,7 +106,7 @@ body {
             position: absolute;
             top: 21px;
             right: 30px;
-            visibility: hidden;
+            display: inline-block;
           }
         }
       }

@@ -71,35 +71,47 @@ body {
   border: 1px solid #6055a5;
 }
 
-.container .main-content .form-card form .form-control .error {
+.container .main-content .form-card form .error-msg {
+  display: none;
+}
+
+.container .main-content .form-card form .error-email {
+  display: none;
+}
+
+.container .main-content .form-card form .fa-exclamation-circle {
+  display: none;
+}
+
+.container .main-content .form-card form .form-control.error input {
   border: 3px solid #ff7a7a;
 }
 
-.container .main-content .form-card form .form-control .error-msg {
+.container .main-content .form-card form .form-control.error .error-msg {
   color: #ff7a7a;
   font-size: .8rem;
   font-style: italic;
   position: absolute;
   right: 5px;
   top: 70px;
-  visibility: hidden;
+  display: inline-block;
 }
 
-.container .main-content .form-card form .form-control .error-email {
+.container .main-content .form-card form .form-control.error .error-email {
   color: #ff7a7a;
   position: absolute;
   left: 20px;
   top: 20px;
-  visibility: hidden;
+  display: inline-block;
 }
 
-.container .main-content .form-card form .form-control .fa-exclamation-circle {
+.container .main-content .form-card form .form-control.error .fa-exclamation-circle {
   color: #ff7a7a;
   font-size: 1.3rem;
   position: absolute;
   top: 21px;
   right: 30px;
-  visibility: hidden;
+  display: inline-block;
 }
 
 .container .main-content .form-card button {
