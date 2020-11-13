@@ -109,6 +109,13 @@ body {
             display: inline-block;
           }
         }
+
+        .form-control.success {
+
+          input {
+            border: 3px solid hsl(154, 59%, 51%);
+          }
+        }
       }
 
       button {

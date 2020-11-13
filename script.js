@@ -18,15 +18,41 @@ function checkInputs() {
 
   if (firstNameValue === '') {
     setErrorFor(firstName);
-    console.log('working');
   } else {
+    setSuccessFor(firstName);
   }
+
+  if (lastNameValue === '') {
+    setErrorFor(lastName);
+  } else {
+    setSuccessFor(lastName);
+  }
+
+  if (emailValue === '') {
+    setErrorFor(email);
+    email.placeholder = '';
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (passwordValue === '') {
+    setErrorFor(password);
+  } else {
+    setSuccessFor(password);
+  }
+
 
   function setErrorFor(input) {
     var formControll = input.parentElement;
 
-
     //add error class
     formControll.className = 'form-control error';
+  }
+
+  function setSuccessFor(input) {
+    var formControll = input.parentElement;
+
+    //add error class
+    formControll.className = 'form-control success';
   }
 }

@@ -114,6 +114,10 @@ body {
   display: inline-block;
 }
 
+.container .main-content .form-card form .form-control.success input {
+  border: 3px solid #38cc8c;
+}
+
 .container .main-content .form-card button {
   color: #fff;
   font-size: 16px;
