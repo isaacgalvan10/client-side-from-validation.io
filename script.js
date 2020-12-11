@@ -2,6 +2,7 @@ var form = document.getElementById('form');
 var firstName = document.getElementById('name');
 var lastName = document.getElementById('last-name');
 var email = document.getElementById('email');
+var emailControl = document.getElementById('email-controll');
 var password = document.getElementById('password');
 
 form.addEventListener('submit', (e) => {
@@ -30,7 +31,8 @@ function checkInputs() {
 
   if (emailValue === '') {
     setErrorFor(email);
-    email.placeholder = '';
+    email.placeholder = 'email@example/com';
+    email.classList.add('error-email');
   } else {
     setSuccessFor(email);
   }
@@ -52,7 +54,7 @@ function checkInputs() {
   function setSuccessFor(input) {
     var formControll = input.parentElement;
 
-    //add error class
+    //add success class
     formControll.className = 'form-control success';
   }
 }

@@ -75,8 +75,36 @@ body {
   display: none;
 }
 
-.container .main-content .form-card form .error-email {
-  display: none;
+.container .main-content .form-card form .error-email::-webkit-input-placeholder {
+  color: #ff7a7a;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: inline-block;
+}
+
+.container .main-content .form-card form .error-email:-ms-input-placeholder {
+  color: #ff7a7a;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: inline-block;
+}
+
+.container .main-content .form-card form .error-email::-ms-input-placeholder {
+  color: #ff7a7a;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: inline-block;
+}
+
+.container .main-content .form-card form .error-email::placeholder {
+  color: #ff7a7a;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: inline-block;
 }
 
 .container .main-content .form-card form .fa-exclamation-circle {
@@ -94,14 +122,6 @@ body {
   position: absolute;
   right: 5px;
   top: 70px;
-  display: inline-block;
-}
-
-.container .main-content .form-card form .form-control.error .error-email {
-  color: #ff7a7a;
-  position: absolute;
-  left: 20px;
-  top: 20px;
   display: inline-block;
 }
 
